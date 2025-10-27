@@ -14,7 +14,8 @@ body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
 }
-/* =================common================= */
+
+/* ============== common ================= */
 .container {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -29,8 +30,8 @@ a {
   display: inline-block;
   min-width: 205px;
   line-height: 60px;
-  background-color: #2e80ce;
-  color: #ffffff;
+  background: #2e80ce;
+  color: #fff;
   text-align: center;
   font-size: 1.8rem;
   font-style: normal;
@@ -41,11 +42,12 @@ a {
 .btn:hover {
   opacity: 0.9;
 }
-/* =================header================= */
+
+/* ================ header ================ */
 .header {
-  background-color: var(--header-bg);
-  min-height: 100vh;
   padding-top: 30px;
+  background: var(--header-bg);
+  min-height: 100vh;
 }
 
 .header-top {
@@ -63,14 +65,15 @@ a {
   padding: 8px 21px;
   color: #c9d2da;
   font-size: 1.6rem;
+  font-style: normal;
   font-weight: 300;
-  margin-left: 1.75;
+  line-height: 1.75;
 }
 
 .navbar__link:hover,
 .navbar__link--active {
-  color: #ffffff;
   text-shadow: 1px 0 0 currentColor;
+  color: #fff;
 }
 
 .navbar__link--active::before {
@@ -79,14 +82,10 @@ a {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background: #fff;
+  top: -3px;
   position: relative;
   right: 8px;
-  top: -3px;
-}
-
-.header__action--login {
-  margin-right: 7px;
 }
 
 .header__action--signup {
@@ -95,7 +94,11 @@ a {
   font-size: 1.6rem;
 }
 
-/* =================hero================= */
+.header__action--login {
+  margin-right: 7px;
+}
+
+/* =================== hero ========================== */
 .hero {
   display: flex;
   padding-top: 76px;
@@ -111,7 +114,7 @@ a {
 }
 
 .hero__heading {
-  color: #ffffff;
+  color: #fff;
   font-size: 7rem;
   font-style: normal;
   font-weight: 600;
@@ -122,10 +125,11 @@ a {
 .hero__desc {
   margin-top: 22px;
   color: #c9d2da;
-  font-size: 1.8rem;
-  font-weight: 300;
+  font-family: Sora;
+  font-size: 18px;
   font-style: normal;
-  line-height: 1.67;
+  font-weight: 300;
+  line-height: 30px; /* 166.667% */
 }
 
 .hero__row {
@@ -139,7 +143,6 @@ a {
   color: #fff;
   text-align: center;
   font-size: 1.8rem;
-  font-weight: 400;
   line-height: 1.67;
 }
 
@@ -154,14 +157,14 @@ a {
   object-fit: cover;
 }
 
-.hero__img--large {
+.hero__img-large {
   width: 330px;
   height: 540px;
   margin-right: -6px;
   z-index: 1;
 }
 
-.hero__img--small {
+.hero__img-small {
   width: 210px;
   height: 410px;
 }
